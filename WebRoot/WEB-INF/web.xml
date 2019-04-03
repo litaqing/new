@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  
+
+  <servlet>
+    <servlet-name>UserloginServlet</servlet-name>
+    <servlet-class>com.kjl.web.UserloginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserRegister</servlet-name>
+    <servlet-class>com.kjl.web.UserRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddNews</servlet-name>
+    <servlet-class>com.kjl.web.AddNews</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsCreate</servlet-name>
+    <servlet-class>com.kjl.web.NewsCreate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsDel</servlet-name>
+    <servlet-class>com.kjl.web.NewsDel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.kjl.web.Index</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserloginServlet</servlet-name>
+    <url-pattern>/dologin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegister</servlet-name>
+    <url-pattern>/doregister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNews</servlet-name>
+    <url-pattern>/newsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsCreate</servlet-name>
+    <url-pattern>/adminNewsCreate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsDel</servlet-name>
+    <url-pattern>/adminNewsDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
